@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect With Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .page-wrapper {
+            background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+        }
+    </style>
+</head>
+<body>
+    <div class="page-wrapper">
+        <div class="page-content">
+            <div class="container">
+                <div class="content-container">
+                    <h1>Connect With Us</h1>
+                    <p class="subtitle">Follow us on social media and share your feedback</p>
+
+                    <!-- Social Media Section -->
+                    <div class="social-section">
+                        <h2>🌐 Follow Our Social Media</h2>
+                        <p class="feedback-description">Stay updated with the latest news, events, and announcements from our community</p>
+                        
+                        <div class="social-grid">
+                            <a href="https://twitter.com" target="_blank" class="social-card twitter">
+                                <span class="social-icon">𝕏</span>
+                                <h3>Twitter</h3>
+                                <p>Follow us for updates</p>
+                            </a>
+
+                            <a href="https://instagram.com" target="_blank" class="social-card instagram">
+                                <span class="social-icon">📷</span>
+                                <h3>Instagram</h3>
+                                <p>See our community photos</p>
+                            </a>
+
+                            <a href="https://youtube.com" target="_blank" class="social-card youtube">
+                                <span class="social-icon">▶️</span>
+                                <h3>YouTube</h3>
+                                <p>Watch our videos</p>
+                            </a>
+
+                            <a href="https://tiktok.com" target="_blank" class="social-card tiktok">
+                                <span class="social-icon">♪</span>
+                                <h3>TikTok</h3>
+                                <p>Short & fun content</p>
+                            </a>
+
+                            <a href="https://facebook.com" target="_blank" class="social-card facebook">
+                                <span class="social-icon">f</span>
+                                <h3>Facebook</h3>
+                                <p>Connect with us</p>
+                            </a>
+
+                            <a href="https://twitch.tv" target="_blank" class="social-card twitch">
+                                <span class="social-icon">⚫</span>
+                                <h3>Twitch</h3>
+                                <p>Watch our streams</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Feedback Section -->
+                    <div class="feedback-section">
+                        <h2>📝 Share Your Feedback</h2>
+                        <p class="feedback-description">We value your opinions! Help us improve our community by sharing your thoughts and suggestions</p>
+                        
+                        <div class="feedback-buttons">
+                            <a href="https://forms.google.com/example" target="_blank" class="feedback-btn">
+                                <span class="feedback-icon">📋</span>
+                                <span>Google Form</span>
+                            </a>
+                            <button class="feedback-btn" onclick="toggleFormEmbed()" style="background: linear-gradient(135deg, var(--accent) 0%, #e89a00 100%);">
+                                <span class="feedback-icon">💬</span>
+                                <span id="toggleText">Show Form</span>
+                            </button>
+                        </div>
+
+                        <!-- Embedded Form (Hidden by default) -->
+                        <div id="formEmbed" class="form-container" style="display: none;">
+                            <p class="form-instruction">Fill out the form below to send us your feedback. Your input helps us improve!</p>
+                            <iframe src="https://forms.google.com/example/preview" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-counter">4</div>
+    
+    <div class="page-nav">
+        <button class="nav-btn" id="prevBtn" onclick="goToPrevious()">←</button>
+        <button class="nav-btn" id="nextBtn" onclick="goToNext()" disabled>→</button>
+    </div>
+
+    <script>
+        window.currentPageNum = 4;
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
